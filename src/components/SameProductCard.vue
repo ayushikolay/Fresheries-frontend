@@ -2,7 +2,7 @@
   <div class="box">
     <div class="seller">
       <img
-        :src="require('@/uploads/' + product.image + '')"
+        :src="product.image"
         alt=""
       />
       <div class="info">
