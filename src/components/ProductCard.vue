@@ -5,7 +5,7 @@
       class="product-img"
     >
       <img
-        :src="require('../../../server/uploads/' + image + '')"
+        :src="image"
         alt="product_img"
       />
       <div class="product-absolute-options">
