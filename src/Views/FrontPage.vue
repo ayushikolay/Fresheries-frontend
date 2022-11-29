@@ -211,7 +211,7 @@ export default {
       this.$router.push({ name: "Home" });
     }
     if (seller) {
-      this.$router.go("/dashboard");
+      this.$router.push({ name: "Dashboard" });
     }
   },
 };
