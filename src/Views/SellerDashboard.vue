@@ -81,7 +81,7 @@ export default {
       swal.fire("Success", response.message, "success");
       //this.$router.go(this.$router.currentRoute);
       //this.$router.go("/dashboard");
-      this.$router.push({ name: "Dashboard" });
+      this.$router.push({ path: "/dashboard" });
     },
   },
 };
