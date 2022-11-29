@@ -14,7 +14,7 @@
               class="product-img"
             > -->
             <div class="product-img">
-              <img :src="require('https://fresheries-api.onrender.com/' + product.image + '')" alt="product_img" />
+              <img :src="'https://fresheries-api.onrender.com/' + product.image" alt="product_img" />
               <div class="product-absolute-options">
                 <span class="offer-badge-1">{{ product.discount }}% OFF</span>
                 <!-- <span class="like-icon" title="wishlist"></span> -->
