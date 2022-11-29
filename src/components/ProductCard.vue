@@ -5,7 +5,7 @@
       class="product-img"
     >
       <img
-        :src="image"
+        :src="'https://fresheries-api.onrender.com/' + image"
         alt="product_img"
       />
       <div class="product-absolute-options">
