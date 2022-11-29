@@ -48,7 +48,7 @@
             :rules="rules"
           />
           <img
-            :src="`/${this.formData.image}`"
+            :src="'https://fresheries-api.onrender.com/' + `${this.formData.image}`"
             width="120px"
             alt="preview-image"
           />
