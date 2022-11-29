@@ -97,7 +97,7 @@ export default {
   },
   methods: {
     async onSignUp() {
-      let result = await axios.post("http://localhost:5000/api/signUp", {
+      let result = await axios.post("https://fresheries-api.onrender.com/api/signUp", {
         name: this.name,
         email: this.email,
         password: this.password,
