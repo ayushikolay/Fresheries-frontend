@@ -79,7 +79,8 @@ export default {
     async removeProduct(id) {
       const response = await API.deleteProduct(id);
       swal.fire("Success", response.message, "success");
-      this.$router.go(this.$router.currentRoute);
+      //this.$router.go(this.$router.currentRoute);
+      this.$router.go("/dashboard");
     },
   },
 };
