@@ -65,11 +65,11 @@ export default new Router({
       name: "SellerLogin",
       component: () => import("@/Views/SellerLogin"),
     },
-    // {
-    //   path: "*",
-    //   name: "Login",
-    //   component: () => import("@/Views/LoginPage"),
-    // },
+    {
+      path: "*",
+      name: "MainPage",
+      component: () => import("@/Views/FrontPage"),
+    },
   ],
   mode: "history",
   scrollBehavior() {
