@@ -2,7 +2,7 @@
   <div class="box">
     <div class="seller">
       <img
-        :src="product.image"
+        :src="'https://fresheries-api.onrender.com/' + product.image"
         alt=""
       />
       <div class="info">
