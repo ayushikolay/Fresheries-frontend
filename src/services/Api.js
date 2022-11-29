@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "/api/product";
+const url = "https://fresheries-api.onrender.com/api/product";
 
 export default class API {
   static async getAllProduct() {
