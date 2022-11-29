@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <header class="header-section">
-      <router-link :to="{ name: 'Home' }">
+      <router-link :to="{ name: 'Home' }" class="routerLink" >
         <div class="logo">
           <a href=""><i class="fas fa-shopping-basket"></i> </a>
           <span>
@@ -80,6 +80,10 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0rem 5%;
+}
+
+.routerLink {
+  text-decoration: none;
 }
 
 .header-section .logo a i {
