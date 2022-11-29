@@ -4,7 +4,7 @@
       <div v-for="product in products" :key="product.id">
         <div class="card">
           <div class="image-container">
-            <img :src="product.image" alt="product_img" />
+            <img :src="'https://fresheries-api.onrender.com/' + product.image" alt="product_img" />
             <span>{{ product.category }}</span>
           </div>
           <div class="container">
