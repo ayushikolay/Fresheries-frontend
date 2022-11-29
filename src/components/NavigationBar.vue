@@ -11,15 +11,17 @@
       crossorigin="anonymous"
     />
     <header class="header-section">
-      <div class="logo">
-        <a href="/home"><i class="fas fa-shopping-basket"></i> </a>
-        <span>
-          <a href="/home">Fresheries</a>
+      <router-link :to="{ name: 'Home' }">
+        <div class="logo">
+          <a href=""><i class="fas fa-shopping-basket"></i> </a>
+          <span>
+            <a href="">Fresheries</a>
+            <br />
+            <small>SUPER MARKET</small>
+          </span>
           <br />
-          <small>SUPER MARKET</small>
-        </span>
-        <br />
-      </div>
+        </div>
+      </router-link>
 
       <div class="search-section">
         <input
