@@ -82,20 +82,21 @@ export default {
   padding: 0rem 5%;
 }
 
-.routerLink {
-  text-decoration: none;
-}
 
-.header-section .logo a i {
+.header-section .routerLink .logo a i {
   font-size: 2.5rem;
   font-weight: bolder;
   color: #4caf50;
   text-decoration: none;
 }
 
-.header-section .logo span {
+.header-section .routerLink .logo span {
   font-size: 1rem;
   color: #4caf50;
+}
+
+.routerLink {
+  text-decoration: none;
 }
 
 .header-section .search-section {
