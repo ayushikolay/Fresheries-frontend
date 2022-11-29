@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     async onLogin() {
-      let result = await axios.post("http://localhost:5000/api/login", {
+      let result = await axios.post("https://fresheries-api.onrender.com/api/login", {
         email: this.email,
         password: this.password,
       });
