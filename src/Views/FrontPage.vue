@@ -206,8 +206,12 @@ export default {
   components: { FooterSec, BoxContainer, HeroContent },
   mounted() {
     let user = localStorage.getItem("user-info");
+    let seller = localStorage.getItem("seller-info");
     if (user) {
       this.$router.push({ name: "Home" });
+    }
+    if (seller) {
+      this.$router.go("/dashboard");
     }
   },
 };
