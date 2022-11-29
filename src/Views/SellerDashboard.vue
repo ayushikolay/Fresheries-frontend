@@ -80,7 +80,8 @@ export default {
       const response = await API.deleteProduct(id);
       swal.fire("Success", response.message, "success");
       //this.$router.go(this.$router.currentRoute);
-      this.$router.go("/dashboard");
+      //this.$router.go("/dashboard");
+      this.$router.push({ name: "Dashboard" });
     },
   },
 };
