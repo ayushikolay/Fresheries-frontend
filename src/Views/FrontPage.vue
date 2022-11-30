@@ -268,7 +268,7 @@ export default {
 }
 
 .hero-content {
-  margin-top: -400px;
+  margin-top: -300px;
   margin-left: 9rem;
 }
 
