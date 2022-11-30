@@ -262,7 +262,7 @@ export default {
 }
 
 .hero-section img {
-  width: 98.6vw;
+  width: 100vw;
   height: 85vh;
   background-size: cover;
 }
