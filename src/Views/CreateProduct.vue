@@ -7,7 +7,6 @@
     <div>
       <form :ref="formData" @submit.prevent="onSubmit">
         <h1>Create New Product</h1>
-        {{ this.image }}
 
         <div v-if="error">{{ error }}</div>
         <div class="form-row">
