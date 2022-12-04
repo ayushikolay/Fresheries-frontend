@@ -97,12 +97,15 @@ export default {
   },
   methods: {
     async onSignUp() {
-      let result = await axios.post("https://fresheries-api.onrender.com/api/signUp", {
-        name: this.name,
-        email: this.email,
-        password: this.password,
-        cpassword: this.cpassword,
-      });
+      let result = await axios.post(
+        "https://fresheries-api.onrender.com/api/signUp",
+        {
+          name: this.name,
+          email: this.email,
+          password: this.password,
+          cpassword: this.cpassword,
+        }
+      );
       // const result = await Response.json(0);
       console.log(result);
       if (result.status == 201 && !this.errors.length) {
@@ -112,33 +115,6 @@ export default {
         this.error = result.data;
       }
     },
-    // onSignUp: async function () {
-    //   const form = event.target;
-    //   const formData = new FormData(form);
-    //   let validations = new SignupValidations(
-    //     this.email,
-    //     this.password,
-    //     this.name,
-    //     this.cpassword
-    //   );
-    //   this.errors = validations.checkSignupValidations();
-    //   if (
-    //     "email " in this.errors ||
-    //     "password" in this.errors ||
-    //     "name" in this.errors ||
-    //     "cpassword" in this.errors
-    //   ) {
-    //     console.log(this.errors);
-
-    //     return false;
-    //   }
-
-    //   const response = await Axios.post(this.$apiURL + "/register", formData);
-    //   swal.fire("Success", response.data.message, "success");
-    //   if (response.data.status == "success") {
-    //     form.reset();
-    //   }
-    // },
   },
   mounted() {
     let user = localStorage.getItem("user-info");

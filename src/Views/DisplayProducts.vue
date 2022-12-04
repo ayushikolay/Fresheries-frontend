@@ -12,7 +12,6 @@
       <span>S</span>
     </h1>
     <div class="wrapper">
-      <!-- <FilterComp :filterProducts="filterProducts" :search="searchTerm" /> -->
       <div>
         <div id="search-container">
           <select v-model="filterByCategory">
@@ -43,7 +42,6 @@
 import Navigation from "@/components/NavigationBar.vue";
 import API from "@/services/Api";
 import ProductsList from "@/components/ProductsList.vue";
-// import FilterComp from "@/components/FilterComp.vue";
 import FooterSec from "@/components/FooterSec.vue";
 
 export default {
@@ -85,13 +83,6 @@ export default {
     },
   },
   methods: {
-    formatProduct(product) {
-      if (product) {
-        return product.slice(0, 15) + "...";
-      } else {
-        return "Undefined";
-      }
-    },
     getAllCategories(products) {
       let arr = [];
       products.forEach((product) => {

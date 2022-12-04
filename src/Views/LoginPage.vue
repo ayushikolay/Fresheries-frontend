@@ -50,7 +50,6 @@
 <script>
 import NavBar from "../components/NavBar.vue";
 import axios from "axios";
-// import SignupValidations from "../services/SignupValidations";
 export default {
   name: "LoginPage",
   data() {
@@ -65,10 +64,13 @@ export default {
   },
   methods: {
     async onLogin() {
-      let result = await axios.post("https://fresheries-api.onrender.com/api/login", {
-        email: this.email,
-        password: this.password,
-      });
+      let result = await axios.post(
+        "https://fresheries-api.onrender.com/api/login",
+        {
+          email: this.email,
+          password: this.password,
+        }
+      );
       if (result.status == 201) {
         localStorage.setItem("user-info", JSON.stringify(result.data));
         this.$router.push({ name: "Home" });

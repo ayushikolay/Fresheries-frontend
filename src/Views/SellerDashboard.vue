@@ -9,18 +9,15 @@
       <div class="product-item-list">
         <div v-for="product in products" :key="product.id">
           <div class="product-item">
-            <!-- <router-link
-              :to="{ name: 'view-product', params: { title: product.title } }"
-              class="product-img"
-            > -->
             <div class="product-img">
-              <img :src="'https://fresheries-api.onrender.com/' + product.image" alt="product_img" />
+              <img
+                :src="'https://fresheries-api.onrender.com/' + product.image"
+                alt="product_img"
+              />
               <div class="product-absolute-options">
                 <span class="offer-badge-1">{{ product.discount }}% OFF</span>
-                <!-- <span class="like-icon" title="wishlist"></span> -->
               </div>
             </div>
-            <!-- </router-link> -->
             <div class="product-text-dt">
               <p>{{ product.stock }}</p>
               <h4>{{ product.title }}</h4>
