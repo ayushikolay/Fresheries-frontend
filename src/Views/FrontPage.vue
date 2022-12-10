@@ -1,16 +1,5 @@
 <template>
   <div>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      crossorigin="anonymous"
-    />
-
     <header class="header-section">
       <div class="logo">
         <a href="./Fresheries.html"><i class="fas fa-shopping-basket"></i> </a>
