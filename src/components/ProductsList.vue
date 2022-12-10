@@ -27,10 +27,6 @@ export default {
   props: ["products"],
   methods: {
     addCart(product) {
-      console.log("pushing into the cart");
-      console.log(product);
-      console.log(this.$store);
-
       this.$store.state.cart.push(product);
     },
   },

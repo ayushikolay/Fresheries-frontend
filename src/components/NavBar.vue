@@ -100,13 +100,6 @@ export default {
   transition: 0.3s linear;
 }
 
-/* #signUpbtn:active {
-  color: #fff;
-  background: #4caf50;
-  border: 1px solid #fff;
-  transition: 0.3s linear;
-} */
-
 .active #signUpbtn {
   color: #fff;
   background: #4caf50;

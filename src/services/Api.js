@@ -31,7 +31,4 @@ export default class API {
     const res = await axios.delete(`${url}/${id}`);
     return res.data;
   }
-  // return axios.create({
-  //   baseURL: "http://localhost:8081/",
-  // });
 }

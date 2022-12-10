@@ -96,9 +96,7 @@
 
 <script>
 import axios from "axios";
-// import swal from "sweetalert2";
 import SellerNavBar from "@/components/SellerNavBar.vue";
-// import SignupValidations from "../services/SignupValidations";
 
 export default {
   name: "SellerRegister",
@@ -125,43 +123,14 @@ export default {
         password: this.password,
         cpassword: this.cpassword,
       });
-      // const result = await Response.json(0);
-      console.log(result);
+
       if (result.status == 201 && !this.errors.length) {
-        // alert("User signup successful");
         localStorage.setItem("seller-info", JSON.stringify(result.data));
         this.$router.push({ name: "Dashboard" });
       } else {
         this.error = result.data;
-        // alert("signup failed");
       }
     },
-    //   onSignUp: async function () {
-    //     const form = event.target;
-    //     const formData = new FormData(form);
-    //     let validations = new SignupValidations(
-    //       this.email,
-    //       this.password,
-    //       this.name,
-    //       this.cpassword
-    //     );
-    //     this.errors = validations.checkSignupValidations();
-    //     if (
-    //       "email " in this.errors ||
-    //       "password" in this.errors ||
-    //       "name" in this.errors ||
-    //       "cpassword" in this.errors
-    //     ) {
-    //       console.log(this.errors);
-    //       return false;
-    //     }
-    //     // const response = await Axios.post(this.$apiURL + "/register", formData);
-    //     // swal.fire("Success", response.data.message, "success");
-    //     // if (response.data.status == "success") {
-    //     //   form.reset();
-    //     // }
-    //   },
-    // },
     mounted() {
       let seller = localStorage.getItem("seller-info");
       if (seller) {
@@ -198,7 +167,6 @@ export default {
 }
 .signup-box {
   width: 500px;
-  /* height: 420px; */
   padding: 55px 40px 90px 50px;
   margin-top: 20px;
   margin-left: 0px;
@@ -222,7 +190,6 @@ export default {
 }
 
 input {
-  /* background-color: rgb(23, 23, 23); */
   color: black;
 }
 
@@ -270,7 +237,6 @@ input {
   background: #fff;
 }
 .heading {
-  /* margin-top: 9rem; */
   text-align: center;
 }
 .heading span {

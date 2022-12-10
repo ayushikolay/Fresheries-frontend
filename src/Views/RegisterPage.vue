@@ -79,9 +79,7 @@
 
 <script>
 import axios from "axios";
-// import swal from "sweetalert2";
 import NavBar from "../components/NavBar.vue";
-// import SignupValidations from "../services/SignupValidations";
 
 export default {
   name: "RegisterPage",
@@ -106,8 +104,6 @@ export default {
           cpassword: this.cpassword,
         }
       );
-      // const result = await Response.json(0);
-      console.log(result);
       if (result.status == 201 && !this.errors.length) {
         localStorage.setItem("user-info", JSON.stringify(result.data));
         this.$router.push({ name: "Home" });
@@ -154,7 +150,6 @@ export default {
 }
 .signup-box {
   width: 500px;
-  /* height: 420px; */
   padding: 55px 40px 90px 50px;
   margin-top: 20px;
   margin-left: 0px;
@@ -178,7 +173,6 @@ export default {
 }
 
 input {
-  /* background-color: rgb(23, 23, 23); */
   color: black;
 }
 
@@ -226,7 +220,6 @@ input {
   background: #fff;
 }
 .heading {
-  /* margin-top: 9rem; */
   text-align: center;
 }
 .heading span {

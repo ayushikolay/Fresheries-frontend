@@ -62,10 +62,6 @@ export default {
   border-top: 4px solid #4caf50;
 }
 
-/* .footer a {
-  color: #fff;
-} */
-
 .footer .box-container {
   display: flex;
   justify-content: space-around;
@@ -168,7 +164,4 @@ export default {
   color: #4caf50;
 }
 
-/* .footer .box a i {
-  color: #fff;
-} */
 </style>

@@ -77,12 +77,6 @@ export default {
       } else {
         this.errors = result.data;
       }
-
-      // let validations = new SignupValidations(this.email, this.password);
-      // this.errors = validations.checkValidations();
-      // if ("email" in this.errors || "password" in this.errors) {
-      //   return false;
-      // }
     },
   },
   mounted() {
@@ -124,7 +118,6 @@ export default {
   background: #fff;
 }
 .heading {
-  /* margin-top: 9rem; */
   text-align: center;
 }
 .heading span {
