@@ -2,9 +2,9 @@
   <div>
     <header class="header-section">
       <div class="logo">
-        <a href="./Fresheries.html"><i class="fas fa-shopping-basket"></i> </a>
+        <a href="#"><i class="fas fa-shopping-basket"></i> </a>
         <span>
-          <a href="./Fresheries.html">Fresheries</a>
+          <a href="#">Fresheries</a>
           <br />
           <small>SUPER MARKET</small>
         </span>
