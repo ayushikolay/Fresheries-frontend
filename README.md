@@ -27,3 +27,6 @@ Start the server for forntend
 ```bash
   npm run serve 
 ```
+
+## License
+[MIT License](LICENSE)
