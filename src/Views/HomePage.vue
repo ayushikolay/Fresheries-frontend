@@ -3,7 +3,7 @@
     <Navigation />
     <section id="home">
       <div class="hero-content">
-        <HeroContent name="" btnName="Explore More" />
+        <HeroContent name="DisplayProducts" btnName="Explore More" />
       </div>
       <div class="img-section">
         <img src="@/assets/home-img.png" alt="" />
